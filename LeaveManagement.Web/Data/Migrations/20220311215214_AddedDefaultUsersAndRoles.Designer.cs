@@ -4,6 +4,7 @@ using LeaveManagement.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeaveManagement.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220311215214_AddedDefaultUsersAndRoles")]
+    partial class AddedDefaultUsersAndRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -188,14 +190,14 @@ namespace LeaveManagement.Web.Data.Migrations
                         new
                         {
                             Id = "8c4d04b0-3589-4572-8e62-16ee5700e11d",
-                            ConcurrencyStamp = "203c2f08-a722-4d37-8ad6-a53d06ba4a0d",
+                            ConcurrencyStamp = "f5c71119-d6d6-4418-b2e5-4357ff1a9fb4",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
                             Id = "b1ef99a2-e4aa-4993-9b76-be7e6caa7348",
-                            ConcurrencyStamp = "7efbf1d0-b37b-4926-bb3e-6be89f25c562"
+                            ConcurrencyStamp = "4d39f7db-d101-48f7-a65e-12696ef4fc48"
                         });
                 });
 
